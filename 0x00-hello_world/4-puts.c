@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* Function prints out string */
+/**
+ * ain - This functipn prints out a string
+ */
 int main(void)
 {
 	/* function prints out string */
