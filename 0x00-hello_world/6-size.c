@@ -5,7 +5,7 @@
  * Return: return and exits the function
  */
 
-int main()
+int main(void)
 {
 	printf("Size of a char: %lu byte(s)\n", sizeof(char));
 	printf("Size of an int: %lu byte(s)\n", sizeof(int));
