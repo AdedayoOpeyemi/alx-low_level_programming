@@ -4,26 +4,25 @@
 /* more headers goes there */
 
 /**
- * main - function to print positive, negative or zero depending on value of variable n
+ * main - function to print +ve, -ve or zero depending on value of n
  * Return: return 0
  */
 int main(void)
 {
 	int n;
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 
-	if( n < 0 )
+	if(n<0)
 	{
-		printf("%d\n  is negative", n );
-	} else if( n > 0)
+		printf("%d is negative", n);
+	} else if(n>0)
 	{
-		printf("%d\n  is positive", n );
+		printf("%d is positive", n);
 	} else
 	{
-		printf("%d\n  is zero", n );
+		printf("%d is zero", n);
 	}
 
 	return (0);
