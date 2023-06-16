@@ -10,14 +10,15 @@ int main(void)
 	int i;
 	int j;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = 48; j <= 57; j++)
+		for (j = 0; j <= 9; j++)
 		{
+
 			putchar(i + '0');
 			putchar(j + '0');
 
-			if(i != 57 && j != 57)
+			if(i != 9 && j != 9)
 			{
 				putchar(',');
 				putchar(' ');
