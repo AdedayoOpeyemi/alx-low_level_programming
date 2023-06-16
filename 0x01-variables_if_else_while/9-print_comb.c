@@ -9,10 +9,10 @@ int main(void)
 {
 	int c = 48;
 
-	while(c <= 57)
+	while (c <= 57)
 	{
 		putchar(c);
-		if(c < 57)
+		if (c < 57)
 		{
 			putchar(44);
 			putchar(32);
