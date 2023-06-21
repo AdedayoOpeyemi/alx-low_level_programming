@@ -7,7 +7,7 @@
  * Return: sum of arguements
  */
 
-int add(int, int)
+int add(int a, int b)
 {
 	int c;
 
