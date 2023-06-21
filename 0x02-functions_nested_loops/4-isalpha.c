@@ -6,7 +6,7 @@
  * Return: 1 if argument is upper case and 0 if not
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
         return (c >= 'A' && c <= 'Z');
 }
