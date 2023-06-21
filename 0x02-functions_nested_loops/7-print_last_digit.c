@@ -3,7 +3,7 @@
 /**
  * print_last_digit - program to check if an argument is lowercase
  * @n: argument to be checked
- * Return: 1 if argument is lower case and 0 if not
+ * Return: last digit of number
  */
 
 int print_last_digit(int n)
