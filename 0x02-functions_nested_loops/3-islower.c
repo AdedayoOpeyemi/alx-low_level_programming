@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * function_name - Short description, single line
- * Return: Description of the returned value
+ * main - program to check if an argument is lowercase
+ * Return: 1 if argument is lower case and 0 if not
  */
 
 int _islower(int c)
