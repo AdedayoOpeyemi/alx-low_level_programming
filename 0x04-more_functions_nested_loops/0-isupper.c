@@ -1,5 +1,5 @@
 #include <ctype.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * _isupper - A function that checks for uppercase character.
  *
