@@ -1,18 +1,21 @@
 #include <stdio.h>
+
 /**
  * isPrime - function to check if a number is prime
  * @n: number to be checked
  * Return: 1 or 0
  */
 
-int isPrime(long long n)
+int isPrime(long n)
 {
+	long i;
+
 	if (n <= 1)
 	{
 		return (0);
 	}
 
-	for (long long i = 2; i * i <= n; i++)
+	for (i = 2; i * i <= n; i++)
 	{
 		if (n % i == 0)
 		{
@@ -28,10 +31,11 @@ int isPrime(long long n)
  */
 int main(void)
 {
-	long long number = 612852475143;
-	long long largestPrimeFactor = 0;
+	long i;
+	long number = 612852475143;
+	long largestPrimeFactor = 0;
 
-	for (long long i = 2; i * i <= number; i++)
+	for (i = 2; i * i <= number; i++)
 	{
 		if (number % i == 0 && isPrime(i))
 		{
@@ -39,5 +43,7 @@ int main(void)
 		}
 	}
 
-	printf("%lld\n", largestPrimeFactor);
+	printf("%ld\n", largestPrimeFactor);
+
+	return (0);
 }
