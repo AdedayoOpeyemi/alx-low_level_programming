@@ -27,7 +27,7 @@ int isPrime(long n)
 
 /**
  * main - Entry point
- * Return: void
+ * Return: 0
  */
 int main(void)
 {
