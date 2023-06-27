@@ -32,7 +32,7 @@ void puts2(char *str)
 	int pos = 0;
 	int str_length = _strlen(str);
 
-	while (start <= str_length)
+	while (pos <= str_length)
 	{
 		_putchar(str[pos]
 		pos += 2;
