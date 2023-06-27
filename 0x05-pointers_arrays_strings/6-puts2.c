@@ -34,9 +34,9 @@ void puts2(char *str)
 
 	while (pos <= str_length)
 	{
-		_putchar(str[pos]
+		_putchar(str[pos]);
 		pos += 2;
 	}
 
-	_putchar("\n")
+	_putchar("\n");
 }
