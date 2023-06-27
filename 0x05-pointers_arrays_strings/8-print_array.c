@@ -1,3 +1,4 @@
+#include <stdio.io>
 #include "main.h"
 /**
  * print_array - function that returns the length of a string
