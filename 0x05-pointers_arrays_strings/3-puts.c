@@ -4,9 +4,9 @@
  *
  * @str: is the character to  check
  *
- * Return: 0
+ * Return: void
  */
-int _puts(char *str)
+void _puts(char *str)
 {
 	while (*str != '\0')
 	{
