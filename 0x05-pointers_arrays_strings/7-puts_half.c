@@ -30,7 +30,9 @@ int _strlen(char *s)
 void puts_half(char *str)
 {
 	int strlen = _strlen(str);
-	int start_pos = strlen / 2;
+	int start_pos;
+
+	strlen % 2 == 0 ? start_pos = strlen / 2 : start_pos = (strlen / 2) + 1
 
 	while (start_pos < strlen)
 	{
