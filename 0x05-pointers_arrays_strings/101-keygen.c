@@ -19,10 +19,10 @@ int main(void)
 		c = rand() % 128;
 
 		sum += c;
-		putchar(c);
+		printf("%c", c);
 	}
 
-	putchar(2772 - sum);
+	printf("c\n", (2772 - sum));
 
 	return (0);
 }
