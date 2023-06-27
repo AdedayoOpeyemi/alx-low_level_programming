@@ -1,4 +1,25 @@
 #include "main.h"
+
+/**
+ * _strlen - function that returns the length of a string
+ *
+ * @s: is the character to  check
+ *
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
+        int length = 0;
+
+        while (*s != '\0')
+        {
+                length++;
+                s++;
+        }
+
+        return (length);
+}
+
 /**
  * print_rev - prints a string, in reverse, followed by a new line.
  *
