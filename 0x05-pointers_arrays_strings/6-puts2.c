@@ -38,5 +38,5 @@ void puts2(char *str)
 		pos += 2;
 	}
 
-	_putchar("\n");
+	_putchar('\n');
 }
