@@ -23,6 +23,8 @@ char *_strncpy(char *dest, char *src, int n)
 	for (i = 0; i < n; i++)
 	{
 		*(dest + count) = *(src + count2);
+		count++;
+		count2++;
 	}
 
 	*(dest + count) = '\0';
