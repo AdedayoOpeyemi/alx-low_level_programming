@@ -3,7 +3,7 @@
  *
  * @dest: destination string
  * @src: source string
- * @i: length of string to be copied
+ * @n: length of string to be copied
  *
  * Return: point to destination string
  */
