@@ -21,13 +21,14 @@ char *_strncpy(char *dest, char *src, int n)
 		count++;
 	}
 
-	while (src[i] != '\0' && i < n)
+	while (*src != '\0' && i < n)
 	{
-		dest[i] = src[i];
+		*dest = *src;
+		src++;
 		i++;
 	}
 
-	dest[count - 1] = '\0';
+	*(dest + (count - 1)) = '\0';
 
 	return (dest);
 }
