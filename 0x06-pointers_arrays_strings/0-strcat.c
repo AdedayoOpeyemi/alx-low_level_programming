@@ -21,6 +21,7 @@ char *_strcat(char *dest, char *src)
 	{
 		*(dest + count) = *(src + count2);
 		count++;
+		count2++;
 	}
 	*(dest + count) = '\0';
 
