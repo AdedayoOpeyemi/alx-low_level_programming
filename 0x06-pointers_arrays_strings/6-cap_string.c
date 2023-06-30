@@ -1,18 +1,18 @@
 /**
- * string_toupper - function that changes all lowercase to uppercase
+ * cap_string - function that changes all lowercase to uppercase
  *
  * @s: string to modify
  *
  * Return: s modified string
  */
 
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int i;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i - 1] == " " &&  (s[i] >= 'a' && s[i] <= 'z'))
+		if (s[i - 1] == ' ' &&  (s[i] >= 'a' && s[i] <= 'z'))
 			s[i] = s[i] - 32;
 	}
 
