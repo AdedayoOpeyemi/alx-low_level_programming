@@ -9,7 +9,7 @@
  *
  */
 
-oid print_number(int n)
+void print_number(int n)
 {
 	/* if n is divisible by 10 */
 	if (n / 10)
