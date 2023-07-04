@@ -1,7 +1,7 @@
 #include <stddef.h>
 
 /**
- * _strchr: function to locate a character in a string
+ * _strchr - function to locate a character in a string
  *
  * @s: pointer arguement
  * @c: char arguement
