@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt - finds the square root of a value
+ * sqrt_checker - finds the square root of a value
  * @n: number we are trying to get square root of
  * @start: start boundary of where check is started
  * @end: end boundary of where check ends
