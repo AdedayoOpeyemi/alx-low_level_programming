@@ -11,10 +11,11 @@
 
 int is_divisible(int divider, int n)
 {
-	if (n % divider == 0 || n < 2)
-		return (0);
-	else if (n / divider == 1)
-		return (1);
+	if (n % divider == 0)
+		if (n == divider)
+			return (1);
+		else
+			return (0);
 	else
 		return (is_divisible(divider + 1, n));
 }
