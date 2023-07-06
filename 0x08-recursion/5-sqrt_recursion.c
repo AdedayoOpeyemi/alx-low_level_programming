@@ -10,12 +10,14 @@
  */
 int sqrt_checker(int n, int start, int end)
 {
+	int mid;
+
 	if (start > end)
 	{
 		return (-1);
 	}
 
-	int mid = start + (end - start) / 2;
+	mid = start + (end - start) / 2;
 
 	if (mid == n / mid && n % mid == 0)
 	{
