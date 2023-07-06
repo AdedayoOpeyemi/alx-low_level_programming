@@ -16,7 +16,7 @@ int is_divisible(int divider, int n)
 	else if (n / divider == 1)
 		return (1);
 	else
-		return (check_prime(divider + 1, n));
+		return (is_divisible(divider + 1, n));
 }
 /**
  * is_prime_number - function to check if a number is prime or not
