@@ -28,7 +28,7 @@ int is_divisible(int divider, int n)
 
 int is_prime_number(int n)
 {
-	int divider = 1;
+	int divider = 2;
 
 	if (n < 0)
 		n = -n;
