@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * create_array - function to create array
  * @size: size of the arrayt to be created
