@@ -12,7 +12,7 @@ int multiply(char *num1, char *num2);
 int main(int argc, char *argv[])
 {
 	char *num1, *num2;
-	int result;
+	int i, result;
 
 	if (argc != 3)
 	{
@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
 	}
 
 	num1 = argv[1];
-	*num2 = argv[2];
+	num2 = argv[2];
 
-	for (int i = 0; num1[i] != '\0'; i++)
+	for (i = 0; num1[i] != '\0'; i++)
 	{
 		if (!isdigit(num1[i]))
 		{
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	for (int i = 0; num2[i] != '\0'; i++)
+	for (i = 0; num2[i] != '\0'; i++)
 	{
 		if (!isdigit(num2[i]))
 		{
