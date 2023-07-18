@@ -1,6 +1,6 @@
-#ifndef CONSTANTS_H
-#define CONSTANTS_H
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
-#define PI 3.14159265359
+#define ABS(x) ((x) < 0 ? -(x) : (x))
 
-#endif /* CONSTANTS_H */
+#endif /* FUNCTION_LIKE_MACRO_H */
