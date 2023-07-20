@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int main(int argc, char *argv[]);
+
 void print_opcodes(int num_bytes)
 {
 	int i;
-	unsigned char *opcodes = (unsigned char *)main;
+	unsigned char *opcodes = (unsigned char *) main;
 
 	for (i = 0; i < num_bytes; i++)
 	{
