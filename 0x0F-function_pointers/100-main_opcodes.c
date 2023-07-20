@@ -16,6 +16,8 @@ void print_opcodes(int num_bytes)
 	for (i = 0; i < num_bytes; i++)
 	{
 		printf("%02x", opcodes[i]);
+		if (i != nbytes - 1)
+			printf(" ");
 	}
 	printf("\n");
 }
@@ -33,7 +35,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
 
 	int num_bytes = atoi(argv[1]);
