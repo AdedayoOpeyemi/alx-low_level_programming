@@ -2,7 +2,12 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]);
-
+/**
+ * print_opcodes - function to print operational code
+ * @num_bytes: number of bytes
+ *
+ * Return: void
+ */
 void print_opcodes(int num_bytes)
 {
 	int i;
@@ -14,6 +19,14 @@ void print_opcodes(int num_bytes)
 	}
 	printf("\n");
 }
+
+/**
+ * main - main entry point
+ * @argc: argument count.
+ * @argv: argument vector.
+ *
+ * Return: Always integer.
+ */
 
 int main(int argc, char *argv[])
 {
