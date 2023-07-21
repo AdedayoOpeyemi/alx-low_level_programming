@@ -8,48 +8,44 @@
  *
  * Return: no return.
  */
-
 void print_all(const char * const format, ...)
 {
-	va_list args;
-	char ch;
-	int num;
-	double dbl;
+	va_list valist;
 	char *str;
-	unsigned int i = 0;
+	int first_arg = 1;
 
-	va_start(args, format);
-	while ((ch = format[i++]) != '\0')
+	va_start(valist, format);
+	while (format && *format)
 	{
-		switch (ch)
+		switch (*format)
 		{
-		case 'c':
-			_putchar(va_arg(args, int));
-			break;
-		case 'i':
-			num = va_arg(args, int);
-			printf("%d", num);
-			break;
-		case 'f':
-			dbl = va_arg(args, double);
-			printf("%f", dbl);
-			break;
-		case 's':
-			str = va_arg(args, char *);
-			if (str != NULL)
-				printf("%s", str);
-			else
-				printf("(nil)");
-			break;
-		default:
-			break;
+			case 'c':
+				printf("%c", va_arg(valist, int));
+				break;
+			case 'i':
+				printf("%d", va_arg(valist, int));
+				break;
+			case 'f':
+				printf("%f", va_arg(valist, double));
+				break;
+			case 's':
+				{
+					str = va_arg(valist, char*);
+					if (str != NULL)
+						printf("%s", str);
+					else
+						printf("(nil)");
+				}
+				break;
+			default:
+				break;
 		}
-		if (format[i] != '\0')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
+		if (*(format + 1) && first_arg)
+			printf(", ");
+			first_arg = 0;
+
+		format++;
 	}
-	va_end(args);
 	printf("\n");
+	va_end(valist);
 }
