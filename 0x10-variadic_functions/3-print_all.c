@@ -11,8 +11,7 @@
 
 void print_all(const char * const format, ...)
 {
-	va_list args;	
-
+	va_list args;
 	char ch;
 	int num;
 	double dbl;
@@ -20,7 +19,6 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 
 	va_start(args, format);
-
 	while ((ch = format[i++]) != '\0')
 	{
 		switch (ch)
@@ -45,15 +43,11 @@ void print_all(const char * const format, ...)
 			break;
 		default:
 			break;
+		}
+		if (format[i] != '\0')
+			_putchar(',');
+			_putchar(' ');
 	}
-
-	if (format[i] != '\0') {
-		_putchar(',');
-		_putchar(' ');
-	}
-	}
-
 	va_end(args);
-
 	printf("\n");
 }
