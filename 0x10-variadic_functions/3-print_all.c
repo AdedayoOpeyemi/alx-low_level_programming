@@ -45,8 +45,10 @@ void print_all(const char * const format, ...)
 			break;
 		}
 		if (format[i] != '\0')
+		{
 			_putchar(',');
 			_putchar(' ');
+		}
 	}
 	va_end(args);
 	printf("\n");
